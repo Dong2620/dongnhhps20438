@@ -1,0 +1,74 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(66, 62, 62);
+    padding: 10px;
+    color: white;
+   
+}
+
+th,
+td {
+    border: 1px #CCC solid;
+    text-align: center;
+}
+
+td div {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: right;
+}
+
+th div {
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+td img {
+    width: 100px;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr {
+    margin-right: 2%;
+}
+.row img {
+    width: 300px;
+    height: 280px;
+}
+
+.chinh img{
+    width: 1180px;
+    min-height: 400px;
+}
+.dongy{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(7, 6, 6);
+    border-radius: 5px;
+    color: white;
+}
+.row .mb th{
+    background-color: rgb(14, 14, 13);
+    color: white;
+}
+.thanhtoan{
+    background-color: rgb(45, 42, 40);
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 3px;
+}

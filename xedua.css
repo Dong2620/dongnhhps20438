@@ -1,0 +1,132 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+}
+.xecontay
+{
+    max-width: 1500px;
+    margin: 0px auto;
+}
+.xecontay>header
+{
+    height: 20px;
+    background-image: url('images/banner1.jpg');
+    background-size: 100% 100%;
+    height: 0px;
+    padding-bottom: 25%;
+    border-radius: 20px;
+}
+.xecontay>nav
+{
+    line-height: 50px;
+    background-color: orangered;
+    color: white;
+   /* text-align: center; */
+    font-variant: small-caps;
+    border-radius: 10px;
+
+}
+.xecontay>nav>a
+{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    margin-left: 20px;
+}
+.xecontay>nav>a:hover
+{
+    color: yellow;
+    text-decoration: underline;
+}
+.phom{
+    Position:absolute;
+    Top:0;
+    Right:0;
+    border-radius: 20px;
+    background-color:#F30;
+    box-shadow:0px 5px 20px  #FFF;
+    width: 290px;
+    height: 55px;
+}
+.phom>ul>li {
+    list-style-type: none;
+  text-align: center;
+  display:inline;
+    margin-left:5px;
+    margin-right:5px;
+}
+.phom>ul>li>a {
+    text-decoration:none;
+    color: #FFF;
+    line-height:30px;
+    font-weight:bold;
+    font-size: larger;
+
+}
+.phom>ul>li>a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+.column
+{
+    width: 25%;
+    float: left;
+}
+.san-pham
+{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px red;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.san-pham.ten
+{
+    font-size: larger;
+    font-variant: small-caps;
+    color: brown;
+}
+.san-pham img
+{
+    max-width: 95%;
+}
+.san-pham .gia
+{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+.san-pham .gia del
+{
+    color: gray;
+}
+h3{
+    color: orangered;
+}
+.xecontay>nav>input
+{
+    width: 400px;
+    height: 25px;
+    right: 200px;
+}
+.xecontay>nav>button
+{
+    height: 25px;
+    font-variant: small-caps;
+}
+.xecontay>nav>iframe
+{
+    margin-left: 120px;
+}
+footer
+{
+    
+        border-top: 10px  orangered;
+        line-height: 30px;
+        background-color: rgb(224, 86, 36);
+        text-align: center;
+        font-variant: small-caps;
+        clear: both;
+        border-radius: 10px;
+}

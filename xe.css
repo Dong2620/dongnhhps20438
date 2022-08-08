@@ -1,0 +1,118 @@
+.column
+{
+    width: 25%;
+    float: left;
+}
+.san-pham
+{
+    position: relative;
+    float: left;
+    min-height: 260px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px red;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.san-pham.ten
+{
+    font-size: larger;
+    font-variant: small-caps;
+    color: brown;
+}
+.san-pham img
+{
+    max-width: 95%;
+}
+.san-pham .gia
+{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+.san-pham .gia del
+{
+    color: gray;
+}
+h3{
+    color: orangered;
+}
+marquee
+{
+    color: blue;
+    font-variant: small-caps;
+    font-size: larger;
+}
+.san-pham>button{
+    width: 80px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    background-color: #FF6600;
+    border-radius: 5px;
+    border: 1px #FC0 solid;
+    padding: 5px 0px;
+    color: #EEE;
+}
+@media only screen and (max-width: 760px) {
+        .column
+    {
+        width: 25%;
+        float: left;
+    }
+    .san-pham
+    {
+        position: relative;
+        float: left;
+        min-height: 130px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px red;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+    }
+    .san-pham.ten
+    {
+        font-size:10px;
+        color: brown;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .san-pham img
+    {
+       width: 90px;
+       height: 40px;
+    }
+    .san-pham .gia
+    {
+        color: red;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .san-pham .gia del
+    {
+        color: gray;
+    }
+    h3{
+        color: orangered;
+    }
+    marquee
+    {
+        color: blue;
+        font-variant: small-caps;
+        font-size: 15px;
+    }
+    .san-pham>button{
+        width: 50px;
+        font-size: 10px;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        background-color: #FF6600;
+        border-radius: 5px;
+        border: 1px #FC0 solid;
+        padding: 5px 0px;
+        color: #EEE;
+    }
+}

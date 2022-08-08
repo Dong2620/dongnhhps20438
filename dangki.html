@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="dangki.css">
+    <title>ĐĂNG KÍ</title>
+</head>
+</style>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="content">
+        <form name="frm" >
+            <h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+            <div class="ground-gr">
+                <label>Mã Sinh Viên</label> <br>
+                <input name="masv" minlength="5" maxlength="10" required ng-model="masv" class="ctrol-gr"> <br>
+                <span ng-if="frm.masv.$invalid"><i>*Mã sinh viên không được bỏ trống</i></span>
+            </div>
+            <div class="ground-gr">
+                <label>Họ và tên</label> <br>
+                <input name="tensv" minlength="2" maxlength="10" required ng-model="tensv" class="ctrol-gr">  <br>
+                <span ng-if="frm.tensv.$invalid"><i>*Tên không được bỏ trống</i></span>
+            </div>
+            <div class="ground-gr">
+                <label>Email</label> <br>
+                <input name="email" type="email" required ng-model="email" class="ctrol-gr">  <br>
+                <span ng-if="frm.email.$invalid"><i>*Email không được bỏ trống</i> </span>
+            </div>
+            <div class="ground-grr ">
+                <label>Giới tính</label> <br>
+                <div class="ctrol-gr-gt">
+                    <label><input type="radio" name="gioitinh" value="1" ng-model="gioitinh">Nam</label>
+                    <label><input type="radio" name="gioitinh" value="0" ng-model="gioitinh">Nữ</label> <br>
+                </div>
+                <span ng-if="!gioitinh"><i>Giới tính không được bỏ trống</i></span>
+            </div>
+            <div class="ground-grr">
+                <label>Sở thích</label> <br>
+                <div class="ctrol-gr-st">
+                    <label><input type="checkbox" ng-model="ds" value="0" name="sach">Đọc sách</label>
+                    <label><input type="checkbox" ng-model="dl" value="1">Du lịch</label>
+                    <label><input type="checkbox" ng-model="at" value="2">Ẩm thực</label>
+                    <label><input type="checkbox" ng-model="an" value="3">Âm nhạc</label>
+                    <label><input type="checkbox" ng-model="khac" value="4">Khác</label>
+                </div>
+                <span ng-if="!ds && !dl && !at && !an && !khac"><i>Chọn một sở thích</i></span>
+            </div>
+            <div class="ground-gr">
+                <label>Quốc tịch</label> <br>
+                <select name="t" ng-model="quoctich" class="ctrol-gr" style="font-size: 17px;">
+<option value="0">Chọn quốc tịch</option>
+                    <option value="1">Việt Nam</option>
+                    <option value="2">USA</option>
+                    <option value="3">China</option>
+                    <option value="4">japan</option>
+                    <option value="5">Kroean</option>
+                </select><br>
+                <span ng-if="!quoctich || quoctich==0"><i>Hãy chọn quốc tịch</i></span>
+            </div>
+            <div class="ground-gr">
+                <label>Ghi chú</label> <br>
+                <textarea name="ghichu" ng-model="ghichu" minlength="5" maxlength="10" cols="67" rows="8"></textarea> <br>
+                <span ng-if="!ghichu"><i>Ghi chú không bỏ trống</i></span>
+            </div>
+        
+            <div class="ground-gr-submit">
+                <button type="submit" class="btn" >Đăng kí</button>
+            </div>
+            </form>
+            </div>
+            </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", xuLy);
+    function xuLy($scope) {
+
+    }
+</script>
+ <!--  Lệnh ng-ifxóa phần tử HTML nếu biểu thức đánh giá là false.
+
+Nếu câu lệnh if đánh giá là true, một bản sao của Phần tử sẽ được thêm vào DOM.
+
+Chỉ ng-ifthị này khác với ng-hide, nó ẩn phần hiển thị của phần tử, trong đó chỉ thị ng-if loại bỏ hoàn toàn phần tử khỏi DOM. -->

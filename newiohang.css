@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.boxcenter {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+.demo {
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+
+.header {
+    background-image: linear-gradient(rgb(45, 44, 42), rgb(26, 24, 23));
+    border: 1px rgb(67, 63, 60) solid;
+    color: rgb(65, 61, 61);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.giohang {
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 20px;
+    height: 60px;
+    background-image: linear-gradient(#F90, #F60);
+    padding: 10px;
+    z-index: 5;
+}
+
+.giohang img {
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+.giohang span {
+    font-weight: bold;
+    font-size: 2vw;
+    color: yellow;
+    height: 40px;
+    line-height: 40px;
+}
+
+#showcart {
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 80px;
+    padding: 10px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    z-index: 4;
+}
+
+.footer {
+    background-color: #F90;
+    border: 1px #F60 solid;
+    color: #FFF;
+    font-size: 0.8vw;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 20px;
+    font-size: 1.5em;
+    color: #FFF;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0px;
+    font-size: 1.2vw;
+    color: rgb(23, 22, 22);
+}
+
+.menu {
+    background-color: black;
+    color: #CCC;
+    border-radius: 5px;
+}
+
+.banner {
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(245, 225, 114);
+}
+
+.banner img {
+    height: 300px;
+   
+}
+
+.boxsp {
+    float: left;
+    width: calc(32% - 5px);
+    min-height: 300px;
+    border: 1px #EEE solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 5px;
+}
+
+.boxsp input {
+    width: 40px;
+    position: absolute;
+    right: 5px;
+    bottom: 40px;
+    border-radius: 5px;
+    border: 1px #FC0 solid;
+}
+
+.boxsp button {
+    width: 80px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    background-color: #FF6600;
+    border-radius: 5px;
+    border: 1px #FC0 solid;
+    padding: 5px 0px;
+    color: #EEE;
+}
+
+.boxsp .img {
+    min-height: 230px;
+    text-align: center;
+}
+
+.img img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu ul {
+    padding: 0px 10px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 15px;
+}
+
+.menu ul li a {
+    color: #CCC;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover {
+    color: white;
+    font-size: 0.8vw;
+}
+
+
+/* giỏ hàng */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(66, 62, 62);
+    padding: 10px;
+    color: white;
+   
+}
+
+th,
+td {
+    border: 1px #CCC solid;
+    text-align: center;
+}
+
+td div {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: right;
+}
+
+th div {
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+td img {
+    width: 100px;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr {
+    margin-right: 2%;
+}
+.row img {
+    max-width: 95%;
+}
+
+.chinh img{
+    width: 1180px;
+    min-height: 400px;
+}
+.dongy{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(7, 6, 6);
+    border-radius: 5px;
+    color: white;
+}
+.row .mb th{
+    background-color: rgb(14, 14, 13);
+    color: white;
+}
+.thanhtoan{
+    background-color: rgb(45, 42, 40);
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+marquee
+{
+    color: blue;
+    font-variant: small-caps;
+    font-size: larger;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="giohang.css">
+</head>
+
+<body>
+    <div class="boxcenter">
+        
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="row container">
+                <h1>THÔNG TIN NHẬN HÀNG</h1>
+                <table class="thongtinnhanhang">
+                    <tr>
+                        <td width="20%">Họ tên</td>
+                        <td><input type="text" name="hoten"></td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ</td>
+                        <td><input type="text" name="diachi"></td>
+                    </tr>
+                    <tr>
+                        <td>Điện thoại</td>
+                        <td><input type="text" name="dienthoai"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row mb">
+                <h1>GIỎ HÀNG</h1>
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền ($)</th>
+                    </tr>
+                    <tbody id="mycart">
+                    </tbody>
+                </table>
+            </div>
+            <div class="row mb">
+                <button class="dongy">ĐỒNG Ý ĐẶT HÀNG</button>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script src="showcart.js"></script>
+<script>
+    laydon();
+</script>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM1</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/magnifying-glass?s=solid">
+</head>
+<!-- <script src="https://uhchat.net/code.php?f=00b678"></script> -->
+<body onload="fStart()">
+    <!-- <div class="giohang">
+        <a onclick="showcart();"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div> -->
+    <div id="showcart">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên     sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="mycart">
+            </tbody>
+                <tr>
+                    <td><a href="giohang.html"><button type="button" class="thanhtoan">Chốt đơn </button></a></td>
+                </tr>
+        </table>
+    </div>
+    <div class="container">
+        
+        <header>    
+            
+            
+            <div class="top-right">
+                <ul>
+                <li><a href="dangnhap.html" target="1">Đăng Nhập</a></li>
+                <li><a href="dangki.html" target="1">Đăng Ký</a></li>
+                </ul>
+                </div>
+            <div class="top-video">
+                <!-- <video src="video/Product Video - WINNER X Thống lĩnh đỉnh cao.mp4" autoplay loop controls width="300px" height="200px"></video> -->
+            </div>
+            <div class="banner1" id="slideshow">
+                <img id="myslide" src="images/banner1.jpg" >
+                
+            </div>
+            
+            <div class="icon-header1">
+                <!-- <img src="images/iconheader.png" onclick="fNext();"> -->
+                <i class="fa fa-chevron-circle-left" onclick="fPrev()"></i>
+                
+            </div>
+            <div class="icon-header2">
+                <!-- <img src="images/iconhederleft.jpg" alt=""> -->
+                <i class="fa fa-chevron-circle-right" onclick="fNext()"></i>
+            </div>
+            <!-- <a><input type="text" placeholder="Tìm kiếm"></a>
+            <i class="fa-solid fa-magnifying-glass"></i> -->
+        </header>
+        <nav class="menu">
+            <ul>
+                
+            <li><a href="index.html">TRANG CHỦ</a> </li>
+            <li><a href="#">GIỚI THIỆU</a> </li>
+            <li> <a href="#">SẢN PHẨM</a>   
+                <ul>
+                    <li><a href="index.html" target="1">Xe hot hiện nay</a></li>
+                    <li><a href="xecontay.html" target="1">Xe côn tay</a></li>
+                    <li><a href="xetayga.html" target="1">Xe tay ga</a></li>
+                    <li><a href="xeso.html" target="1">Xe số thường</a></li>
+                </ul>
+            <li><a href="#">DỊCH VỤ</a> 
+            <li><a href="#">CỬA HÀNG</a> 
+            <li><a href="#">TUYỂN DỤNG</a>
+            <li><a href="#">HỔ TRỢ</a>
+                
+                <ul>
+                    <li><a href="#">Chăm sóc khách hàng</a></li>
+                    <li><a href="#">Dịch vụ bảo hành</a></li>
+                </ul>
+            <li><a href="giohang.html">GIỎ HÀNG</a>
+                <!-- <video src="video/Product Video - WINNER X Thống lĩnh đỉnh cao.mp4" width="200px" height="200px"></video> -->
+                
+        </nav>
+        <article class="article">
+            <iframe src="xehot.html" frameborder="0"></iframe>
+            
+        </article>
+        <aside>
+            <ul>
+                <div class="vmenu">
+                    <li><a href="xecontay.html" target="1">Xe côn tay</a></li>
+                    <li><a href="xeso.html" target="1">Xe số thường</a></li>
+                    <li><a href="xetayga.html" target="1">Xe tay ga</a></li>
+                    <li><a href="xedua.html">Xe đua</a></li>
+                </div>
+                <div class="amenu">
+                    <img src="images/cac-hang-xe-o-to-cua-nhat-noi-tieng-tai-viet-nam.jpg" width="300px" height="80px">
+                </div>
+                <div class="bmenu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="video.html" target="1">Tin tức</a></li>
+                    <li><a href="banggia.html" target="1">Bảng giá</a></li>
+                    <li><a href="map.html" target="1">Địa chỉ</a></li>
+                </div>
+            </ul>
+
+        </aside>
+
+        <footer class="footer">
+            <div class="footer_img">
+               <img src="images/logo dong.jpg" width="180px" id="ivLogo">
+            </div>
+            <div class="footer_logo">
+                <img src="images/logo.png" width="180px" id="ivLogo">
+            </div>
+            <div class="footer_tich">
+                <img src="images/20150827110756-dadangky.png"  id="ivLogo" width="140px">
+            </div>
+            <div class="footer-icon">
+                <img src="images/icon-thiet-ke-logo-thuong-hieu-baabrand-4.png" width="50px" height="50px"  id="ivHand">
+            </div>
+            <div class="footer_like">
+                <img src="images/like.png" width="100px" height="30px" id="ivLogo">
+            </div>
+            <div class="logo_fpt">
+                <img src="images/logo-fpt.jpg" alt="" width="140px" id="ivLogo">
+            </div>
+            <div class="footer_gt">         
+                <h2 id="txtNhan">Thông tin khác</h2> 
+                <h3 id="txtNhan1"><a href="#">Giới thiệu</a> </h3>
+                <h3 id="txtNhan1"><a href="#">Tuyển dụng</a> </h3>
+                <h3 id="txtNhan1"><a href="#">Hổ tợ</a> </h3>
+                <h3 id="txtNhan1"><a href="#">Liên hệ</a> </h3>              
+            </div>
+            <div class="footer_gt">         
+                <h2 id="txtNhan">Về cửa hàng</h2> 
+                <h3 id="txtNhan1"><a href="#">Hãng xe</a> </h3>
+                <h3 id="txtNhan1"><a href="#">Dòng xe</a> </h3>
+                <h3 id="txtNhan1"><a href="#">Phụ kiện</a> </h3>
+                <h3 id="txtNhan1"><a href="#">Đồ bảo hộ</a> </h3>              
+            </div>
+    
+            <div class="footer_gt">
+                <h2 id="txtNhan">Thanh toán</h2>
+                <a href="#">   <img src="images/jcb.jfif" width="40px" id="ivThanhtoan">              </a>
+                <a href="#">   <img src="images/momo.png" width="40px"id="ivThanhtoan">      </a>     
+                <a href="#">   <img src="images/visaaaa.png" width="40px"id="ivThanhtoan">   </a>
+                <br>
+                <a href="#">   <img src="images/tải xuống.png" width="40px"id="ivThanhtoan"> </a>
+                <a href="#">   <img src="images/viet.jfif" width="40px"id="ivThanhtoan">     </a>
+                <a href="#">   <img src="images/mastercard.png" width="40px"id="ivThanhtoan"></a>
+            </div>   
+            
+            <div class="footer_gt">
+                <h2 id="txtNhan">Liên hệ</h2>          
+                <h3> <a href="#" id="txtLienhe">   <img src="images/facebook.png" width="16px" id="ivLienhe">     Facebook   </a>     </h3>     
+                <h3> <a href="#">   <img src="images/instagram.png" width="16px" id="ivLienhe">    Instagram  </a>     </h3>                
+                <h3> <a href="#">   <img src="images/twitter.png" width="16px" id="ivLienhe">     Twitter  </a>     </h3>
+            </div>    
+                
+            <div class="footer_gt">
+                <h2 id="txtNhan">Góp ý</h2>
+                <!-- <input type="text"  placeholder="Gửi phản hồi !!!" id="nx" > -->
+                <textarea name="" id="nx" cols="25" rows="1"></textarea>
+                <button class="phanhoi"><strong>Gửi</strong></button>
+            </div>
+            <a href="#">
+                <div class="chat">
+                    <i class="ti-themify-favicon-alt img-chat"><img src="images/giphy.gif"></i>
+                </div>
+            </a>
+            <div class="footer_end">
+                Hotline: (034) 8939 220         
+            </div>
+            <div class="footer_end2">
+                Email: nguyenhauhiendong528@gmail.com
+                
+            </div>
+           
+        </footer>
+    </div>
+</body>
+
+</html>
+<script src="slideshow.js"></script>
+<script src="showcart.js"></script>
